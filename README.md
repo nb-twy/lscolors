@@ -25,12 +25,14 @@ I set out to create a color scheme for `LSCOLORS` with the following goals:
 The `.dircolors` file is the most important file.  You can simply download the file and copy it to the
 appropriate location on your system.
 
-**Personal:** If you just need to modify your local profile's colors, copy `.dircolors` to
+**Personal**  
+If you just need to modify your local profile's colors, copy `.dircolors` to
 `~/.dircolors`.
 
-**All Profiles** You can configure the default color scheme for all profiles by modifying `/etc/DIR_COLORS`.
+**All Profiles**  
+You can configure the default color scheme for all profiles by modifying `/etc/DIR_COLORS`.
 
-**Configuring Your Environment**
+**Configuring Your Environment**  
 You will also need to include some code in your preferred profile script (i.e. `~/.bashrc`) to activate
 the color scheme.
 
