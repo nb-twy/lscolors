@@ -1,0 +1,405 @@
+# Dark 256 color solarized theme for the color GNU ls utility.
+# Used and tested with dircolors (GNU coreutils) 8.5
+#
+# @author  {@link http://sebastian.tramp.name Sebastian Tramp}
+#
+# More Information at
+# https://github.com/seebi/dircolors-solarized
+
+# Term Section
+TERM Eterm
+TERM alacritty
+TERM ansi
+TERM color-xterm
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM cons25
+TERM console
+TERM cygwin
+TERM dtterm
+TERM dvtm
+TERM dvtm-256color
+TERM eterm-color
+TERM fbterm
+TERM gnome
+TERM gnome-256color
+TERM jfbterm
+TERM konsole
+TERM konsole-256color
+TERM kterm
+TERM linux
+TERM linux-c
+TERM mach-color
+TERM mlterm
+TERM putty
+TERM putty-256color
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-cygwin
+TERM rxvt-cygwin-native
+TERM rxvt-unicode
+TERM rxvt-unicode256
+TERM rxvt-unicode-256color
+TERM screen
+TERM screen-16color
+TERM screen-16color-bce
+TERM screen-16color-s
+TERM screen-16color-bce-s
+TERM screen-256color
+TERM screen-256color-bce
+TERM screen-256color-s
+TERM screen-256color-bce-s
+TERM screen-256color-italic
+TERM screen-bce
+TERM screen-w
+TERM screen.linux
+TERM screen.xterm-256color
+TERM st
+TERM st-meta
+TERM st-256color
+TERM st-meta-256color
+TERM tmux
+TERM tmux-256color
+TERM vt100
+TERM xterm
+TERM xterm-16color
+TERM xterm-256color
+TERM xterm-256color-italic
+TERM xterm-88color
+TERM xterm-color
+TERM xterm-debian
+TERM xterm-termite
+
+### Style Names ###
+## Plain Styles
+# WHITE="00;38;5;15"          # Used
+# SILVER="00;38;5;248"        # Used
+# GRAY="00;38;5;244"          # Used
+# TAN="00;38;5;137"           # Used
+# BRONZE="00;38;5;136"
+# BROWN="00;38;5;94"          # Used
+# PALEPINK="00;38;5;13"       # Used
+# PINK="00;38;5;212"
+# MAGENTA="00;38;5;200"       # Used
+# RED="00;38;5;9"             # Used
+# MAROON="00;38;5;88"         # Used
+# APRICOT="00;38;5;209"       # Used
+# ORANGE="00;38;5;202"        # Used
+# COPPER="00;38;5;131"        # Used
+# LEMON="00;38;5;229"         # Used
+# YELLOW="00;38;5;220"        # Used
+# GOLD="00;38;5;142"
+# AQUA="00;38;5;49"           # Used
+# PALEGREEN="00;38;5;10"      # Used
+# GREEN="00;38;5;34"          # Used
+# PALEBLUE="00;38;5;12"       # Used
+# SKYBLUE="00;38;5;14"        # Used
+# BLUE="00;38;5;33"           # Used
+# CERULEAN="00;38;5;4"        # Used
+# AMETHYST="00;38;5;99"       # Used
+# PURPLE="00;38;5;91"         # Used
+# EGGPLANT="00;38;5;54"
+
+## Underline Styles
+# U_WHITE="04;38;5;15"        # Used
+# U_SILVER="00;38;5;248"
+# U_GRAY="04;38;5;244"        # Used
+# U_TAN="04;38;5;137"
+# U_BRONZE="04;38;5;136"
+# U_BROWN="04;38;5;94"
+# U_PALEPINK="04;38;5;13"     # Used
+# U_PINK="04;38;5;212"
+# U_MAGENTA="04;38;5;200"
+# U_RED="04;38;5;9"           # Used
+# U_MAROON="04;38;5;88"
+# U_APRICOT="04;38;5;209"
+# U_ORANGE="04;38;5;202"
+# U_COPPER="04;38;5;131"
+# U_LEMON="04;38;5;229"
+# U_YELLOW="04;38;5;220"
+# U_GOLD="04;38;5;142"
+# U_AQUA="04;38;5;49"
+# U_PALEGREEN="04;38;5;10"
+# U_GREEN="04;38;5;34"
+# U_PALEBLUE="04;38;5;12"
+# U_SKYBLUE="04;38;5;14"      # Used
+# U_BLUE="04;38;5;33"         # Used
+# U_CERULEAN="04;38;5;4"
+# U_AMETHYST="04;38;5;99"
+# U_PURPLE="04;38;5;91"
+# U_EGGPLANT="04;38;5;54"
+
+## Styles with Backgrounds
+# WHITE_ON_RED="00;38;5;15;48;5;124"          # Used
+# BLACK_ON_GRAY="00;38;5;0;48;5;102"          # Used
+# WHITE_ON_GREEN="00;38;5;15;48;5;22"
+# WHITE_ON_BLUE="00;38;5;15;48;5;4"           # Used
+# BLACK_ON_YELLOW="00;38;5;0;48;5;220"        # Used
+###################
+
+## Special Identifiers
+# Text that is not a file, directory, link, or pipe name
+# Dim white
+NORMAL 00;38;5;248
+# Normal files
+# Full white (not bold)
+FILE 00;38;5;15
+# Reset to "normal" color
+RESET 0
+# Regular directory
+# Blue
+DIR 00;38;5;33
+# Soft links
+# Use color of linked file
+LINK 00;38;5;137
+MULTIHARDLINK 00;38;5;200 # regular file with more than one link
+FIFO 00;38;5;15;48;5;4 # pipe
+SOCK 00;38;5;0;48;5;220  # socket
+DOOR 00;38;5;0;48;5;102  # door
+BLK 04;38;5;244 # block device driver
+CHR 04;38;5;15 # character device driver
+ORPHAN 00;38;5;15;48;5;124 # symlink to nonexistent file, or non-stat'able file
+SETUID 00;38;5;9 # file that is setuid (u+s)
+SETGID 04;38;5;9 # file that is setgid (g+s)
+CAPABILITY 04;38;5;13 # file with capability
+STICKY_OTHER_WRITABLE 04;38;5;14 # dir that is sticky and other-writable (+t,o+w)
+OTHER_WRITABLE 00;38;5;14 # dir that is other-writable (o+w) and not sticky
+STICKY 04;38;5;33 # dir with the sticky bit set (+t) and not other-writable
+# This is for files with execute permission:
+EXEC 00;38;5;34
+
+### File Types ###
+# Structured text
+*.json          00;38;5;229
+*.xml           00;38;5;229
+*.yml           00;38;5;229
+*.csv           00;38;5;229
+*.rdf           00;38;5;229
+*.owl           00;38;5;229
+*.n3            00;38;5;229
+*.ttl           00;38;5;229
+*.nfo           00;38;5;229
+
+# Formatted document
+*.doc           00;38;5;49
+*.docx          00;38;5;49
+*.pdf           00;38;5;49
+*.xls           00;38;5;49
+*.xlsx          00;38;5;49
+*.ppt           00;38;5;49
+*.pptx          00;38;5;49
+*.pub           00;38;5;49
+*.one           00;38;5;49
+
+
+# Markup files -- Amethyst
+*.htm        00;38;5;99
+*.html       00;38;5;99
+*.css        00;38;5;99
+*.md         00;38;5;99
+*.markdown   00;38;5;99
+*.tex        00;38;5;99
+*.lot        00;38;5;99
+*.bbl        00;38;5;99
+*.aux        00;38;5;99
+*README      00;38;5;99
+
+# Source code files -- Yellow
+# Interpreted script files
+*.rs         00;38;5;220
+*.lib        00;38;5;220
+*.js         00;38;5;220
+*.py         00;38;5;220
+*.sh         00;38;5;220
+*.c          00;38;5;220
+*.cc         00;38;5;220
+*.cpp        00;38;5;220
+*.cxx        00;38;5;220
+*.h          00;38;5;220
+*.hh         00;38;5;220
+*.hpp        00;38;5;220
+*.cs         00;38;5;220
+*.java       00;38;5;220
+*.class      00;38;5;220
+*.go         00;38;5;220
+*.objc       00;38;5;220
+*.sql        00;38;5;220
+
+# Configuration files -- Brown
+*.ini           00;38;5;94
+*.config        00;38;5;94
+*.csproj        00;38;5;94
+*.sln           00;38;5;94
+*.cfg           00;38;5;94
+*.conf          00;38;5;94
+*.torrent       00;38;5;94
+*Dockerfile     00;38;5;94
+*Makefile       00;38;5;94
+*Rakefile       00;38;5;94
+.bashrc         00;38;5;94
+.vimrc          00;38;5;94
+.bash_profile   00;38;5;94
+.profile        00;38;5;94
+.gitignore      00;38;5;94
+.dircolors      00;38;5;94
+
+# Binary assets -- Palepink
+*.o                 00;38;5;13
+*.so                00;38;5;13
+*.a                 00;38;5;13
+*.dll               00;38;5;13
+*.pyc               00;38;5;13
+
+# Data files -- Palegreen
+*.log               00;38;5;10
+*.sqlite            00;38;5;10
+*.mdb               00;38;5;10
+*.mkd               00;38;5;10
+
+# Archives or compressed -- Purple
+*.tar    00;38;5;91
+*.tgz    00;38;5;91
+*.arj    00;38;5;91
+*.taz    00;38;5;91
+*.lzh    00;38;5;91
+*.lzma   00;38;5;91
+*.tlz    00;38;5;91
+*.txz    00;38;5;91
+*.zip    00;38;5;91
+*.zst    00;38;5;91
+*.z      00;38;5;91
+*.Z      00;38;5;91
+*.dz     00;38;5;91
+*.gz     00;38;5;91
+*.lz     00;38;5;91
+*.xz     00;38;5;91
+*.bz2    00;38;5;91
+*.bz     00;38;5;91
+*.tbz    00;38;5;91
+*.tbz2   00;38;5;91
+*.tz     00;38;5;91
+*.deb    00;38;5;91
+*.rpm    00;38;5;91
+*.jar    00;38;5;91
+*.rar    00;38;5;91
+*.ace    00;38;5;91
+*.zoo    00;38;5;91
+*.cpio   00;38;5;91
+*.7z     00;38;5;91
+*.rz     00;38;5;91
+*.apk    00;38;5;91
+*.gem    00;38;5;91
+
+# Plain text -- Cerulean
+*.txt   00;38;5;12
+*.rtf   00;38;5;12
+
+## Media Files -- Orange Family
+# Image formats -- Apricot
+*.jpg    00;38;5;209
+*.JPG    00;38;5;209
+*.jpeg   00;38;5;209
+*.gif    00;38;5;209
+*.bmp    00;38;5;209
+*.pbm    00;38;5;209
+*.pgm    00;38;5;209
+*.ppm    00;38;5;209
+*.tga    00;38;5;209
+*.xbm    00;38;5;209
+*.xpm    00;38;5;209
+*.tif    00;38;5;209
+*.tiff   00;38;5;209
+*.png    00;38;5;209
+*.PNG    00;38;5;209
+*.svg    00;38;5;209
+*.svgz   00;38;5;209
+*.mng    00;38;5;209
+*.pcx    00;38;5;209
+*.dl     00;38;5;209
+*.xcf    00;38;5;209
+*.xwd    00;38;5;209
+*.yuv    00;38;5;209
+*.cgm    00;38;5;209
+*.emf    00;38;5;209
+*.eps    00;38;5;209
+*.CR2    00;38;5;209
+*.ico    00;38;5;209
+*.nef    00;38;5;209 # Nikon RAW format
+*.NEF    00;38;5;209
+*.webp   00;38;5;209 # https://en.wikipedia.org/wiki/WebP
+
+# Audio formats -- Copper
+*.aac    00;38;5;131
+*.au     00;38;5;131
+*.flac   00;38;5;131
+*.mid    00;38;5;131
+*.midi   00;38;5;131
+*.mka    00;38;5;131
+*.mp3    00;38;5;131
+*.mpc    00;38;5;131
+*.ogg    00;38;5;131
+*.opus   00;38;5;131
+*.ra     00;38;5;131
+*.wav    00;38;5;131
+*.m4a    00;38;5;131
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+*.axa    00;38;5;131
+*.oga    00;38;5;131
+*.spx    00;38;5;131
+*.xspf   00;38;5;131
+*.lof    00;38;5;131
+
+# Video formats -- Orange
+*.mov    00;38;5;202
+*.MOV    00;38;5;202
+*.mpg    00;38;5;202
+*.mpeg   00;38;5;202
+*.m2v    00;38;5;202
+*.mkv    00;38;5;202
+*.ogm    00;38;5;202
+*.mp4    00;38;5;202
+*.m4v    00;38;5;202
+*.mp4v   00;38;5;202
+*.vob    00;38;5;202
+*.qt     00;38;5;202
+*.nuv    00;38;5;202
+*.wmv    00;38;5;202
+*.asf    00;38;5;202
+*.rm     00;38;5;202
+*.rmvb   00;38;5;202
+*.flc    00;38;5;202
+*.avi    00;38;5;202
+*.fli    00;38;5;202
+*.flv    00;38;5;202
+*.gl     00;38;5;202
+*.m2ts   00;38;5;202
+*.divx   00;38;5;202
+*.webm   00;38;5;202
+# http://wiki.xiph.org/index.php/MIME_Types_and_File_Extensions
+*.axv    00;38;5;202
+*.anx    00;38;5;202
+*.ogv    00;38;5;202
+*.ogx    00;38;5;202
+
+# System Files -- Maroon
+*.nt            00;38;5;88
+*.bak           00;38;5;88
+
+# Temp files -- Gray
+*~           00;38;5;244
+*#           00;38;5;244
+*.part       00;38;5;244
+*.incomplete 00;38;5;244
+*.swp        00;38;5;244
+*.tmp        00;38;5;244
+*.temp       00;38;5;244
+*.cache      00;38;5;244
+
