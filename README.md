@@ -1,3 +1,5 @@
+![GitHub release (latest by date)](https://img.shields.io/badge/Version-1.0.0-success)
+
 # LSCOLORS
 Have you ever been frustrated with the colored output of `ls` on a Linux terminal?  I switch between
 Fedora, Ubuntu, and other Linux distributions fairly regularly.  I also install new Linux instances
